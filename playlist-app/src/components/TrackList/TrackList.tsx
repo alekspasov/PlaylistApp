@@ -1,4 +1,5 @@
 import TrackCard from "../TrackCard/TrackCard"
+import './TrackList.css'
 
 
 const TrackList = ({tracks}) => {
@@ -11,4 +12,4 @@ const TrackList = ({tracks}) => {
     
 }
 
-export default TrackList;
+export default TrackList; 

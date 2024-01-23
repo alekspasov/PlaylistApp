@@ -20,8 +20,10 @@ function App() {
     <Box>
     
     <SearchBar />
+    <div className="trackLists">
     <TrackList tracks = {trackList}/>
-    <PlayList />
+    <TrackList tracks = {trackList} />
+    </div>
     </Box>
   )
 }
