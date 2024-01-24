@@ -19,17 +19,11 @@ const TracksSlice = createSlice({
     name: 'tracks',
     initialState,
     reducers: {
-        addTrack: (state,action: PayloadAction<{track:Track}>) => {
-            state.tracks.push({
-                id: action.payload.id,
-                name: action.payload.name,
-                album: action.payload.album,
-                artist: action.payload.artist
-
-            })
+        addTrack: (state,action: PayloadAction<Track>) => {
+            state.tracks.push(action.payload)
         }
     }
 })
 
 export default TracksSlice.reducer;
-export const {addTrack} = TracksSlice.actions;
+export const trackActions = TracksSlice.actions;
