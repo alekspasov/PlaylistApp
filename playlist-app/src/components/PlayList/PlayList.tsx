@@ -1,5 +1,4 @@
-import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Radio, RadioGroup, Stack, useDisclosure } from "@chakra-ui/react"
-import { useState } from "react"
+import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, useDisclosure } from "@chakra-ui/react"
 
 const PlayList = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
